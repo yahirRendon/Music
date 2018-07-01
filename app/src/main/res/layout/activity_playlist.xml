@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.music.PlaylistActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTertiary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nowPlayingText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/headerStyle"
+                android:text="@string/now_playing_header_text"
+                 />
+
+            <TextView
+                android:id="@+id/playlistText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/headerStyle"
+                android:text="@string/playlist_header_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activeIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/active_height"
+        android:layout_below="@+id/header"
+        android:background="@color/colorTertiary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nowPlayingBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorTertiary" />
+
+            <TextView
+                android:id="@+id/playlistBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/colorTertiary"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/footer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/footerStyle"
+            android:text="Music for all your moods" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activeIndicator"
+        android:layout_above="@id/footer"
+        android:orientation="vertical"
+        android:id="@+id/list">
+
+    </ListView>
+
+</RelativeLayout>
+

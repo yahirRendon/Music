@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/medium"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/medium"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="←"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_marginHorizontal="@dimen/large"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="▷"/>
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:text="→"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/songTitleNP_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="Near Light by"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/songArtistNP_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="Olafur Arnalds"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/songAlbumNP_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            tools:text="They Have Escaped the Weight of Darkness"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+
+
+

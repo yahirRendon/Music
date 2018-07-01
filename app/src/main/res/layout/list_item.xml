@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/large"
+    android:orientation="vertical">
+
+    <!--List adapter layout-->
+    <TextView
+        android:id="@+id/songTitle_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Ljioslo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/medium_text"/>
+
+    <TextView
+        android:id="@+id/songArtist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_text"
+        tools:text="Olafur Arnalds"/>
+
+    <TextView
+        android:id="@+id/songAlbum_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text"
+        tools:text="...They have escaped the weight of darkness"/>
+
+</LinearLayout>

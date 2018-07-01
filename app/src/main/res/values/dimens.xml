@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margin & Padding-->
+    <dimen name="small">4dp</dimen>
+    <dimen name="medium">8dp</dimen>
+    <dimen name="large">16dp</dimen>
+    <dimen name="xLarge">32dp</dimen>
+
+    <!--Text-->
+    <dimen name="xSmall_text">12sp</dimen>
+    <dimen name="small_text">18sp</dimen>
+    <dimen name="medium_text">24sp</dimen>
+    <dimen name="large_text">32sp</dimen>
+    <dimen name="xLarge_text">40sp</dimen>
+
+    <!--Header & Footer-->
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">30dp</dimen>
+    <dimen name="active_height">5dp</dimen>
+    <dimen name="button_width">40dp</dimen>
+    <dimen name="ctrl_btn_size">60dp</dimen>
+    <dimen name="emoticon_size">40dp</dimen>
+</resources>
